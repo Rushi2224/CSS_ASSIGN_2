@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <!-- Include Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Include your custom stylesheet (Style.css) -->
+  <link rel="stylesheet" href="css/Style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 form-container">
+        <!-- Login Form -->
+        <h2>Login</h2>
+        <!-- Form submission sends data to database.php using the POST method -->
+        <form action="database.php" method="post">
+          <div class="form-group">
+            <label for="loginEmail">Email address</label>
+            <!-- Input field for email with required attribute -->
+            <input type="email" class="form-control" id="loginEmail" name="loginEmail" required>
+          </div>
+          <div class="form-group">
+            <label for="loginPassword">Password</label>
+            <!-- Input field for password with required attribute -->
+            <input type="password" class="form-control" id="loginPassword" name="loginPassword" required>
+          </div>
+          <!-- Submit button to submit the form -->
+          <button type="submit" class="btn btn-primary">Login</button>
+          <!-- Link to the registration page (register.php) -->
+          <a href="register.php" target="_blank" rel="noopener noreferrer">Register here</a>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Include jQuery, Popper.js, and Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
